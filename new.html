@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 20%;
+            padding: 10px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]#Add {
+            background-color: #4CAF50;
+        }
+
+        input[type="submit"]#Multi {
+            background-color: #2196F3;
+        }
+
+        input[type="submit"]#div {
+            background-color: #ff9800;
+        }
+
+        input[type="submit"]#sub {
+            background-color: #f44336;
+        }
+
+        label#output {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" name="number1" id="num1" placeholder="Enter first number"><br>
+        <input type="number" name="number2" id="num2" placeholder="Enter second number"><br>
+
+        <input type="submit" value="+" id="Add" onclick="calc1()">
+        <input type="submit" value="*" id="Multi" onclick="calc2()">
+        <input type="submit" value="/" id="div" onclick="calc3()">
+        <input type="submit" value="-" id="sub" onclick="calc4()">
+
+        <label for="" id="output"></label>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
